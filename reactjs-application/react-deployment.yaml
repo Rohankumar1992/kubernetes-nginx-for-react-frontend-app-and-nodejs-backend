@@ -6,7 +6,7 @@ metadata:
   labels:
     app: react-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: react-deployment
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: react-container
-        image: naresh240/reactapp:latest
+        image: 653470767467.dkr.ecr.ap-south-1.amazonaws.com/rohan-test-ecr:latest
         ports:
         - containerPort: 80
         volumeMounts:
